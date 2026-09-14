@@ -1,6 +1,6 @@
     // --- CONFIGURAÇÕES DE CONEXÃO ---
     // Substitua pelo IP do notebook onde o Mosquitto está rodando
-    const MQTT_HOST = "192.168.X.X"; 
+    const MQTT_HOST = "10.136.35.13"; 
     const MQTT_PORT = 9001; // Porta WebSocket configurada no mosquitto.conf
 
     // Tópicos exatos publicados pelo ESP32

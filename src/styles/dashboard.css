@@ -1,22 +1,37 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: "Segoe UI", Arial, sans-serif;
-    background: rgb(4, 4, 40);
+    background: #070b10;
     color: white;
-    min-height: 100vh;
-    display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px 24px;
+}
+
+:root {
+    --fundo: #070b10;
+    --fundo-secundario: #0c1118;
+    --card: #111820;
+    --card-hover: #151f29;
+    --azul: #00d9ff;
+    --azul-escuro: #009fc0;
+    --texto: #f5f7fa;
+    --texto-secundario: #9ba7b5;
+    --borda: rgba(255, 255, 255, 0.08);
 }
 
 .dashboard {
     max-width: 1200px;
     margin: 0 auto;
+    margin-top: 20px;
     width: 100%;
 }
 
@@ -29,7 +44,7 @@ body {
 }
 
 .subtitle {
-    color: lightskyblue;
+    color: var(--azul);
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 2px;
@@ -180,6 +195,109 @@ h1 {
     margin: 0 0 8px;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(7, 11, 16, 0.92);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    padding: 20px 50px;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.top h1 {
+    color: #00d9ff;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+ul a {
+    padding: 12px 20px;
+    color: #9ba7b5;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+ul a:hover {
+    color: #00d9ff;
+    background: #111820;
+}
+
+.footer {
+    background: #05080c;
+    border-top: 1px solid var(--borda);
+    width: min(1200px, 90%);
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.footer-content {
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 40px;
+    align-items: center;
+}
+
+.footer h2 {
+    color: var(--azul);
+    font-size: 20px;
+}
+
+.footer p {
+    color: var(--texto-secundario);
+    font-size: 13px;
+}
+
+.integrantes span, .grupo span {
+    display: block;
+    color: #687381;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    margin-bottom: 5px;
+}
+
+.grupo {
+    text-align: right;
+}
+
+.grupo strong {
+    color: var(--azul);
+    font-size: 25px;
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--borda);
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 11px;
+    color: #687381;
+}
+
 @media (max-width: 900px) {
 
     .cards-container {
@@ -188,6 +306,14 @@ h1 {
 
     .air-card {
         grid-column: span 2;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grupo {
+        text-align: left;
     }
 
 }
@@ -238,6 +364,19 @@ h1 {
         width: 52px;
         height: 52px;
         font-size: 25px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .grupo {
+        text-align: left;
+    }
+
+    .footer-bottom {
+        padding: 15px;
     }
 
 }

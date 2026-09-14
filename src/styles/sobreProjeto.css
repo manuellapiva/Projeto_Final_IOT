@@ -42,13 +42,53 @@ img {
     --borda: rgba(255, 255, 255, 0.08);
 }
 
-.header {
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
     position: sticky;
     top: 0;
     z-index: 1000;
     background: rgba(7, 11, 16, 0.92);
-    border-bottom: 1px solid var(--borda);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(15px);
+    padding: 20px 50px;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.top h1 {
+    color: #00d9ff;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+ul a {
+    padding: 12px 20px;
+    color: #9ba7b5;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+ul a:hover {
+    color: #00d9ff;
+    background: #111820;
 }
 
 .hero {
@@ -279,6 +319,80 @@ img {
     margin-bottom: 8px;
 }
 
+.card h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: var(--texto-secundario);
+    font-size: 14px;
+    min-height: 105px;
+}
+
+.card-line {
+    width: 100%;
+    height: 1px;
+    background: var(--borda);
+    margin: 25px 0 15px;
+}
+
+.card-detail {
+    color: var(--azul);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.fluxo {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
+    align-items: center;
+    gap: 15px;
+}
+
+.fluxo-item {
+    text-align: center;
+    padding: 30px 15px;
+    background: var(--card);
+    border: 1px solid var(--borda);
+    min-height: 220px;
+}
+
+.fluxo-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid var(--azul);
+    color: var(--azul);
+    font-size: 22px;
+}
+
+.fluxo-item > span {
+    color: var(--azul);
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.fluxo-item h3 {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.fluxo-item p {
+    color: var(--texto-secundario);
+    font-size: 12px;
+}
+
+.seta {
+    color: var(--azul);
+    font-size: 25px;
+}
+
 .galeria {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
@@ -313,39 +427,6 @@ img {
     background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
     font-size: 13px;
     font-weight: bold;
-}
-
-.beneficios {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
-}
-
-.beneficios article {
-    padding: 30px;
-    border-top: 2px solid var(--azul);
-    background: var(--card);
-    transition: 0.3s;
-}
-
-.beneficios article:hover {
-    transform: translateY(-5px);
-}
-
-.beneficios span {
-    color: var(--azul);
-    font-size: 11px;
-    letter-spacing: 1px;
-}
-
-.beneficios h3 {
-    margin: 15px 0 10px;
-    font-size: 18px;
-}
-
-.beneficios p {
-    color: var(--texto-secundario);
-    font-size: 13px;
 }
 
 .footer {
