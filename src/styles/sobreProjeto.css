@@ -398,3 +398,134 @@ img {
     font-size: 11px;
     color: #687381;
 }
+
+@media (max-width: 950px) {
+    .menu {
+        display: none;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .hero {
+        padding: 100px 0;
+    }
+
+    .hero-card {
+        max-width: 500px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .objetivo {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .fluxo {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .seta {
+        transform: rotate(90deg);
+        margin: 0 auto;
+    }
+
+    .beneficios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .galeria {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 250px 200px;
+    }
+
+    .galeria .figure:first-child {
+        grid-column: 1 / -1;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grupo {
+        text-align: left;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 92%;
+    }
+
+    .header-content {
+        min-height: 70px;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 80px 0;
+    }
+
+    .hero h2 {
+        font-size: 43px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .section {
+        padding: 75px 0;
+    }
+
+    .section-title {
+        margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+        font-size: 34px;
+    }
+
+    .card {
+        padding: 28px;
+    }
+
+    .card p {
+        min-height: auto;
+    }
+
+    .galeria {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 250px 200px 200px;
+    }
+
+    .galeria .figure:first-child {
+        grid-column: auto;
+    }
+
+    .beneficios {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .grupo {
+        text-align: left;
+    }
+
+    .footer-bottom {
+        padding: 15px;
+    }
+}
