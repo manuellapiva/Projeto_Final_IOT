@@ -20,3 +20,24 @@ a {
     color: inherit;
 }
 
+img {
+    width: 100%;
+    display: block;
+}
+
+.container {
+    width: min(1200px, 90%);
+    margin: 0 auto;
+}
+
+:root {
+    --fundo: #070b10;
+    --fundo-secundario: #0c1118;
+    --card: #111820;
+    --card-hover: #151f29;
+    --azul: #00d9ff;
+    --azul-escuro: #009fc0;
+    --texto: #f5f7fa;
+    --texto-secundario: #9ba7b5;
+    --borda: rgba(255, 255, 255, 0.08);
+}
