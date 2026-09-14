@@ -69,7 +69,6 @@ ul {
     justify-content: center;
     gap: 15px;
     margin-top: 20px;
-    flex-wrap: wrap;
 }
 
 ul a {
@@ -84,39 +83,6 @@ ul a:hover {
     background: #111820;
 }
 
-.info-section {
-    max-width: 900px;
-    margin: 40px auto 0;
-    padding: 0 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-.sobre,
-.projeto {
-    background: rgba(17, 24, 32, 0.8);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 16px;
-    padding: 30px 24px;
-    text-align: center;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-}
-
-.sobre h2,
-.projeto h2 {
-    color: #00d9ff;
-    margin-bottom: 12px;
-    font-size: 2rem;
-}
-
-.sobre p,
-.projeto p {
-    color: #dfe7f1;
-    font-size: 1.05rem;
-    line-height: 1.8;
-}
-
 .equipe {
     padding: 80px 30px;
     max-width: 1200px;
@@ -129,37 +95,35 @@ ul a:hover {
     justify-content: center;
     gap: 20px;
     margin-bottom: 20px;
-    flex-wrap: wrap;
 }
 
 .pessoa {
     width: 280px;
-    padding: 20px 18px;
-    background: rgba(17, 24, 32, 0.9);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 18px;
+    padding: 30px;
     text-align: center;
-    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #111820;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: 0.3s;
 }
 
 .pessoa:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
+    transform: translateY(-6px);
+    background: #151f29;
+    border-color: rgba(0, 217, 255, 0.3);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
 }
 
 .pessoa img {
-    width: 100%;
-    height: 220px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
-    border-radius: 12px;
-    margin-bottom: 16px;
-    display: block;
+    margin: 0 auto 20px;
+    border: 1px solid #00d9ff;
 }
 
 .pessoa h3 {
-    color: #ffffff;
-    font-size: 1.2rem;
+    color: #f5f7fa;
+    font-size: 18px;
     margin-bottom: 10px;
 }
 
@@ -234,6 +198,18 @@ h2 {
 
     .grupo {
         text-align: left;
+    color: #9ba7b5;
+    font-size: 13px;
+    }
+
+    .pessoa p:last-child {
+        color: #00d9ff;
+        margin-top: 8px;
+
+        .pess1,
+        .pess2 {
+            flex-wrap: wrap;
+        }
     }
 }
 
@@ -249,5 +225,32 @@ h2 {
 
     .footer-bottom {
         padding: 15px;
+    }
+    header {
+        padding: 20px;
+    }
+
+    ul {
+        gap: 5px;
+    }
+
+    ul a {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .equipe {
+        padding: 50px 20px;
+    }
+
+    .pess1,
+    .pess2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pessoa {
+        width: 100%;
+        max-width: 300px;
     }
 }
