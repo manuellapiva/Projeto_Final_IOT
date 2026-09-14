@@ -83,6 +83,39 @@ ul a:hover {
     background: #111820;
 }
 
+.info-section {
+    max-width: 900px;
+    margin: 40px auto 0;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.sobre,
+.projeto {
+    background: rgba(17, 24, 32, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 30px 24px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.sobre h2,
+.projeto h2 {
+    color: #00d9ff;
+    margin-bottom: 12px;
+    font-size: 2rem;
+}
+
+.sobre p,
+.projeto p {
+    color: #dfe7f1;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
 .equipe {
     padding: 80px 30px;
     max-width: 1200px;
