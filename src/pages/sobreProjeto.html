@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre o Projeto</title>
+    <link rel="stylesheet" href="../styles/sobreProjeto.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Estação IoT</h1>
+    </header>
+    <main>
+        <section class="hero" id="inicio">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <span class="tag">PROJETO DE INTERNET DAS COISAS</span>
+                    <h2>Estação Climática em Tempo Real</h2>
+                    <p>
+                        Um projeto desenvolvido para utilizar a tecnologia
+                        da Internet das Coisas no monitoramento de condições
+                        ambientais através de sensores conectados à internet.
+                    </p>
+
+                    <a href="#objetivo" class="botao">
+                        Conheça o projeto
+                        <span>→</span>
+                    </a>
+                </div>
+
+                <div class="hero-card">
+                    <img src="../../assets/img/proj1.jpeg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="objetivo">
+            <div class="container">
+                <div class="section-title">
+                    <span>01 — OBJETIVO</span>
+                    <h2>Qual é a proposta <strong>do projeto?</strong></h2>
+                </div>
+                <article class="objetivo">
+                    <div class="objetivo-text">
+                        <p>
+                            O objetivo deste projeto é desenvolver uma estação
+                            de monitoramento ambiental utilizando conceitos de
+                            <strong>Internet das Coisas (IoT)</strong>.
+                        </p>
+                        <p>
+                            Através de sensores conectados a um
+                            <strong>ESP32</strong>, o sistema realiza a coleta
+                            de informações sobre o ambiente, como temperatura,
+                            umidade e qualidade do ar.
+                        </p>
+                        <p>
+                            Esses dados são enviados através de uma rede Wi-Fi
+                            para um servidor MQTT e posteriormente apresentados
+                            em um dashboard, permitindo acompanhar as
+                            informações em tempo real.
+                        </p>
+                    </div>
+                    
+                    <div class="objetivo-info">
+                        <div class="info-item">
+                            <span class="numero">01</span>
+                            <div>
+                                <h3>Coletar</h3>
+                                <p>Obter informações através dos sensores.</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="numero">02</span>
+                            <div>
+                                <h3>Transmitir</h3>
+                                <p>Enviar os dados através da conexão Wi-Fi.</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="numero">03</span>
+                            <div>
+                                <h3>Monitorar</h3>
+                                <p>Visualizar os dados em tempo real.</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section section-dark" id="hardware">
+            <div class="container">
+                <div class="section-title center">
+                    <span>02 — HARDWARE</span>
+                    <h2>Componentes <strong>utilizados</strong></h2>
+                    <p>
+                        O sistema é formado por diferentes componentes
+                        responsáveis pela coleta e processamento das informações.
+                    </p>
+                </div>
+
+                <div class="cards">
+                    <article class="card">
+                        <div class="card-icon">⚡</div>
+                        <span class="card-number">
+                            COMPONENTE 01
+                        </span>
+                        <h3>ESP32</h3>
+                        <p>
+                            Microcontrolador responsável por controlar os
+                            sensores, processar as informações coletadas e
+                            realizar a comunicação com a rede Wi-Fi.
+                        </p>
+                        <div class="card-line"></div>
+                        <span class="card-detail">
+                            Unidade de processamento
+                        </span>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-icon">◌</div>
+                        <span class="card-number">
+                            COMPONENTE 02
+                        </span>
+                        <h3>DHT11</h3>
+                        <p>
+                            Sensor utilizado para realizar a medição da
+                            temperatura e da umidade do ambiente.
+                        </p>
+                        <div class="card-line"></div>
+                        <span class="card-detail">
+                            Temperatura + Umidade
+                        </span>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-icon">≋</div>
+                        <span class="card-number">
+                            COMPONENTE 03
+                        </span>
+                        <h3>MQ-135</h3>
+                        <p>
+                            Sensor utilizado para detectar alterações na
+                            qualidade do ar através da leitura de gases
+                            presentes no ambiente.
+                        </p>
+                        <div class="card-line"></div>
+                        <span class="card-detail">
+                            Qualidade do ar
+                        </span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="arquitetura">
+            <div class="container">
+                <div class="section-title center">
+                    <span>03 — ARQUITETURA</span>
+                    <h2>Como o sistema <strong>funciona?</strong></h2>
+                    <p>
+                        Os componentes trabalham juntos para coletar,
+                        transmitir e apresentar os dados.
+                    </p>
+                </div>
+
+                <div class="fluxo">
+                    <div class="fluxo-item">
+                        <div class="fluxo-icon">◉</div>
+                        <span>01</span>
+                        <h3>Sensores</h3>
+                        <p>
+                            Capturam informações
+                            do ambiente.
+                        </p>
+                    </div>
+
+                    <div class="seta">
+                        →
+                    </div>
+
+                    <div class="fluxo-item">
+                        <div class="fluxo-icon">⚡</div>
+                        <span>02</span>
+                        <h3>ESP32</h3>
+                        <p>
+                            Processa as informações
+                            recebidas.
+                        </p>
+                    </div>
+
+                    <div class="seta">
+                        →
+                    </div>
+
+                    <div class="fluxo-item">
+                        <div class="fluxo-icon">≋</div>
+                        <span>03</span>
+                        <h3>MQTT</h3>
+                        <p>
+                            Transporta os dados
+                            pela rede.
+                        </p>
+                    </div>
+
+                    <div class="seta">
+                        →
+                    </div>
+
+                    <div class="fluxo-item">
+                        <div class="fluxo-icon">▣</div>
+                        <span>04</span>
+                        <h3>Dashboard</h3>
+                        <p>
+                            Apresenta os dados
+                            em tempo real.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-dark">
+            <div class="container">
+                <div class="section-title center">
+                    <span>04 — PROJETO</span>
+                    <h2>Galeria da <strong>estação</strong></h2>
+                    <p>
+                        Registros do desenvolvimento e montagem
+                        do projeto IoT.
+                    </p>
+                </div>
+
+                <div class="galeria">
+                    <div class="figure" class="imagem-principal">
+                        <img src="../../assets/img/proj2.jpeg" alt="Estação IoT">
+                    </div>
+
+                    <div class="figure">
+                        <img src="../../assets/img/proj3.jpeg" alt="Componentes utilizados no projeto">
+                    </div>
+
+                    <div class="figure">
+                        <img src="../../assets/img/proj4.jpeg" alt="Montagem do projeto">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div>
+                <h2>Estação IoT</h2>
+                <p>Projeto desenvolvido no SESI SENAI Vinhedo.</p>
+            </div>
+
+            <div class="integrantes">
+                <span>INTEGRANTES DO GRUPO</span>
+                <p>Ayla Vilela · Gabriella Stavarengo · Gustavo Millamonte · Manuella Piva · Maria Vitória</p>
+            </div>
+
+            <div class="grupo">
+                <span>GRUPO</span>
+                <strong>02</strong>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Projeto IOT SESI SENAI Vinhedo Grupo 02</p>
+        </div>
+    </footer>
+</body>
+</html>
