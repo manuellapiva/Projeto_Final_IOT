@@ -186,3 +186,95 @@ img {
     gap: 80px;
 }
 
+.objetivo-text p {
+    color: var(--texto-secundario);
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.objetivo-text strong {
+    color: var(--texto);
+}
+
+.objetivo-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: var(--card);
+    border: 1px solid var(--borda);
+    transition: 0.3s;
+}
+
+.info-item:hover {
+    transform: translateX(5px);
+    border-color: rgba(0, 217, 255, 0.3);
+}
+
+.numero {
+    min-width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--azul);
+    color: var(--azul);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.info-item h3 {
+    font-size: 17px;
+    margin-bottom: 3px;
+}
+
+.info-item p {
+    color: var(--texto-secundario);
+    font-size: 13px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: var(--card);
+    border: 1px solid var(--borda);
+    padding: 35px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    background: var(--card-hover);
+    border-color: rgba(0, 217, 255, 0.3);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.card-icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--azul);
+    color: var(--azul);
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.card-number {
+    display: block;
+    color: var(--texto-secundario);
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+}
