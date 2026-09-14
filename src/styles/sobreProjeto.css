@@ -81,3 +81,30 @@ img {
     z-index: 1;
 }
 
+.tag {
+    display: inline-block;
+    color: var(--azul);
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: clamp(42px, 6vw, 76px);
+    line-height: 1.05;
+    max-width: 750px;
+    margin-bottom: 25px;
+}
+
+.hero h2 span {
+    display: block;
+    color: var(--azul);
+}
+
+.hero p {
+    color: var(--texto-secundario);
+    max-width: 600px;
+    font-size: 17px;
+    margin-bottom: 35px;
+}
