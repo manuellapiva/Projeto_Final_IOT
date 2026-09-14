@@ -108,3 +108,81 @@ img {
     font-size: 17px;
     margin-bottom: 35px;
 }
+
+.botao {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    padding: 14px 22px;
+    border: 1px solid var(--azul);
+    color: var(--azul);
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: var(--azul);
+    color: #061016;
+    box-shadow: 0 0 25px rgba(0, 217, 255, 0.25);
+}
+
+
+.section {
+    padding: 110px 0;
+}
+
+.section-dark {
+    background: var(--fundo-secundario);
+
+    border-top: 1px solid var(--borda);
+    border-bottom: 1px solid var(--borda);
+}
+
+.hero-card {
+    position: relative;
+    padding: 50px 40px;
+    text-align: center;
+    background: linear-gradient(145deg,#111820,#0a1016);
+    border: 1px solid var(--borda);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.section-title {
+    margin-bottom: 55px;
+}
+
+.section-title.center {
+    text-align: center;
+}
+
+.section-title > span {
+    color: var(--azul);
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-title h2 {
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.1;
+    margin-top: 12px;
+}
+
+.section-title h2 strong {
+    color: var(--azul);
+}
+
+.section-title p {
+    color: var(--texto-secundario);
+    max-width: 600px;
+    margin: 18px auto 0;
+}
+
+.objetivo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+}
+
