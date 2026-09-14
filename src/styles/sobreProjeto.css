@@ -278,3 +278,123 @@ img {
     letter-spacing: 1.5px;
     margin-bottom: 8px;
 }
+
+.galeria {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 300px;
+    gap: 15px;
+}
+
+.galeria .figure {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--borda);
+    background: var(--card);
+}
+
+.galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.galeria .figure:hover img {
+    transform: scale(1.05);
+}
+
+.galeria .figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 18px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.beneficios {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.beneficios article {
+    padding: 30px;
+    border-top: 2px solid var(--azul);
+    background: var(--card);
+    transition: 0.3s;
+}
+
+.beneficios article:hover {
+    transform: translateY(-5px);
+}
+
+.beneficios span {
+    color: var(--azul);
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.beneficios h3 {
+    margin: 15px 0 10px;
+    font-size: 18px;
+}
+
+.beneficios p {
+    color: var(--texto-secundario);
+    font-size: 13px;
+}
+
+.footer {
+    background: #05080c;
+    border-top: 1px solid var(--borda);
+}
+
+.footer-content {
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 40px;
+    align-items: center;
+}
+
+.footer h2 {
+    color: var(--azul);
+    font-size: 20px;
+}
+
+.footer p {
+    color: var(--texto-secundario);
+    font-size: 13px;
+}
+
+.integrantes span, .grupo span {
+    display: block;
+    color: #687381;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    margin-bottom: 5px;
+}
+
+.grupo {
+    text-align: right;
+}
+
+.grupo strong {
+    color: var(--azul);
+    font-size: 25px;
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--borda);
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 11px;
+    color: #687381;
+}
