@@ -42,11 +42,6 @@ img {
     --borda: rgba(255, 255, 255, 0.08);
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
 header {
     position: sticky;
     top: 0;
@@ -135,11 +130,6 @@ ul a:hover {
     line-height: 1.05;
     max-width: 750px;
     margin-bottom: 25px;
-}
-
-.hero h2 span {
-    display: block;
-    color: var(--azul);
 }
 
 .hero p {
@@ -414,17 +404,6 @@ ul a:hover {
 
 .galeria .figure:hover img {
     transform: scale(1.05);
-}
-
-.galeria .figcaption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 18px;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
-    font-size: 13px;
-    font-weight: bold;
 }
 
 .footer {
