@@ -1,3 +1,18 @@
+    // --- IDENTIFICAÇÃO DO GRUPO ---
+
+    const grupo = {
+        numero: "Grupo 02",
+        integrantes: [
+            "Ayla Vilela",
+            "Gabriela Stavarengo",
+            "Gustavo Millamonte",
+            "Manuella Piva",
+            "Maria Vitória"
+        ]
+    };
+
+    localStorage.setItem("grupo02", JSON.stringify(grupo));
+    
     // --- CONFIGURAÇÕES DE CONEXÃO ---
     // Substitua pelo IP do notebook onde o Mosquitto está rodando
     const MQTT_HOST = "192.168.3.236"; 
