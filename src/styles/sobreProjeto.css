@@ -167,14 +167,12 @@ ul a:hover {
     box-shadow: 0 0 25px rgba(0, 217, 255, 0.25);
 }
 
-
 .section {
     padding: 110px 0;
 }
 
 .section-dark {
     background: var(--fundo-secundario);
-
     border-top: 1px solid var(--borda);
     border-bottom: 1px solid var(--borda);
 }
@@ -481,9 +479,6 @@ ul a:hover {
 }
 
 @media (max-width: 950px) {
-    .menu {
-        display: none;
-    }
 
     .hero-content {
         grid-template-columns: 1fr;
@@ -519,10 +514,6 @@ ul a:hover {
         margin: 0 auto;
     }
 
-    .beneficios {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .galeria {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 250px 200px;
@@ -544,10 +535,6 @@ ul a:hover {
 @media (max-width: 600px) {
     .container {
         width: 92%;
-    }
-
-    .header-content {
-        min-height: 70px;
     }
 
     .hero {
@@ -591,10 +578,6 @@ ul a:hover {
 
     .galeria .figure:first-child {
         grid-column: auto;
-    }
-
-    .beneficios {
-        grid-template-columns: 1fr;
     }
 
     .footer-content {
